@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Holiday Tracker - Home</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo-container">
+        <a href="./Home.html">Holiday-Tracker</a>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="./Home.html" class="active">Home</a></li>
+          <li><a href="./API.html">API Search</a></li>
+          <li><a href="./Blogs.html">Blogs</a></li>
+          <li><a href="./News.html">News</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero-section" id="home-hero">
+        <div class="hero-content">
+          <h1 class="animate-float">Discover the World's Holidays</h1>
+          <p>
+            Welcome to your comprehensive guide for public holidays, events, and
+            global celebrations. Plan your year with confidence!
+          </p>
+          <a href="#about" class="btn btn-primary">Learn More</a>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="about-content">
+          <h2>What We Offer</h2>
+          <p>
+            The Global Holiday Tracker is a powerful resource built to simplify
+            holiday tracking worldwide. We utilize the robust Nager.Date API to
+            provide accurate, real-time public holiday data for nearly every
+            country.
+          </p>
+          <p>
+            How to Use: Navigate to the API Search page, select a country and a
+            year, and instantly view all official public holidays. Explore our
+            Blogs and News sections for cultural insights and travel ideas!
+          </p>
+        </div>
+      </section>
+
+      <section class="cards-section" id="featured-news">
+        <h2 class="section-title">Global Holiday Spotlight</h2>
+        <div class="card-grid">
+          <article class="card">
+            <div
+              class="card-image"
+              style="background-image: url(./Assests/New\ Year\ in\ Sydney.jpg)"
+            ></div>
+            <h3>New Year's Eve in Sydney</h3>
+            <p>
+              A look at Australia's dazzling fireworks display and unique
+              holiday traditions...
+            </p>
+            <a href="news.html" class="card-link">Read More</a>
+          </article>
+          <article class="card">
+            <div
+              class="card-image"
+              style="
+                background-image: url(./Assests/Carnival\ in\ Brazil\ 2024.jpg);
+              "
+            ></div>
+            <h3>Carnival in Brazil 2024 Dates</h3>
+            <p>
+              Get the official dates and key tips for attending the biggest
+              street party in the world...
+            </p>
+            <a href="news.html" class="card-link">Read More</a>
+          </article>
+          <article class="card">
+            <div
+              class="card-image"
+              style="
+                background-image: url(./Assests/Diwali\ Festival\ of\ Lights.jpg);
+              "
+            ></div>
+            <h3>Diwali: Festival of Lights</h3>
+            <p>
+              Understanding the cultural significance and celebration of Diwali
+              across India and the globe...
+            </p>
+            <a href="news.html" class="card-link">Read More</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="gallery-section">
+        <h2 class="section-title">Holiday Gallery</h2>
+        <div class="gallery-grid">
+          <div
+            class="gallery-item"
+            style="
+              background-image: url(./Assests/Japanese\ Cherry\ Blossoms.jpg);
+            "
+            aria-label="Japanese Cherry Blossoms"
+          ></div>
+          <div
+            class="gallery-item"
+            style="
+              background-image: url(./Assests/Oktoberfest\ in\ Germany.jpg);
+            "
+            aria-label="Oktoberfest in Germany"
+          ></div>
+          <div
+            class="gallery-item"
+            style="
+              background-image: url(./Assests/St.\ Patrick\'s\ Day\ in\ Ireland\ hd.jpg);
+            "
+            aria-label="St. Patrick's Day in Ireland"
+          ></div>
+          <div
+            class="gallery-item"
+            style="background-image: url(./Assests/Festival\ in\ Japan.jpg)"
+            aria-label="Lantern Festival in China"
+          ></div>
+          <!-- <a href="news.html" class="card-link">View More</a> -->
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <h2 class="section-title">Ready to Explore?</h2>
+        <p>
+          Use our powerful API search to instantly find public holidays for any
+          country and year!
+        </p>
+        <a href="./API.html" class="btn btn-secondary"
+          >Explore the API Search <i class="fas fa-chevron-right"></i
+        ></a>
+      </section>
+
+      <section class="cards-section" id="featured-blogs">
+        <h2 class="section-title">Cultural Insights (Blogs)</h2>
+        <div class="card-grid">
+          <article class="card">
+            <div
+              class="card-image"
+              style="
+                background-image: url(./Assests/10\ Unique\ Summer\ Festivals.jpg);
+              "
+            ></div>
+            <h3>10 Unique Summer Festivals</h3>
+            <p>
+              From Spain's tomato throwing to Korea's mud festival, discover
+              events for your bucket list...
+            </p>
+            <a href="blog.html" class="card-link">Read Blog</a>
+          </article>
+          <article class="card">
+            <div
+              class="card-image"
+              style="
+                background-image: url(./Assests/Navigating\ Public\ Transport.jpg);
+              "
+            ></div>
+            <h3>Navigating Public Transport on Holidays</h3>
+            <p>
+              Tips and tricks for traveling in major cities when local holidays
+              are in effect...
+            </p>
+            <a href="blog.html" class="card-link">Read Blog</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <p>
+        &copy; 2025 Global Holiday Tracker. All rights reserved. | Developed by
+        Web Dev Dave | Data powered by Nager.Date API
+      </p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+
+    <script src="./JavaScript/apps.js"></script>
+  </body>
+</html>

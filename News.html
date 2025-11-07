@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News - Global Holiday Tracker</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo-container">
+        <a href="./1.html">Holiday-Tracker</a>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./API.html">API Search</a></li>
+          <li><a href="./Blogs.html">Blogs</a></li>
+          <li><a href="./News.html" class="active">News</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero-section" id="news-hero">
+        <div class="hero-content">
+          <h2>Latest Global Holiday News</h2>
+          <p>
+            Stay up-to-date with official holiday announcements, changes, and
+            event-related news from around the world.
+          </p>
+        </div>
+      </section>
+
+      <section class="cards-section news-articles">
+        <h2 class="section-title">Latest Announcements</h2>
+        <div class="card-grid">
+          <article class="card blog-post-card" data-modal-target="#news-modal1">
+            <div
+              class="card-image"
+              style="
+                background-image: url(./Assests/Government\ Approves\ New\ Public\ Holiday\ in\ [Country].jpg);
+              "
+            ></div>
+            <h3>
+              Government Approves New Public Holiday in Republic of Aethel
+            </h3>
+            <p>
+              Details on the new annual holiday and its cultural significance...
+            </p>
+            <a
+              href="#"
+              class="card-link"
+              onclick="openModal(event, 'news-modal1')"
+              >Read Article</a
+            >
+          </article>
+
+          <article class="card blog-post-card" data-modal-target="#news-modal2">
+            <div
+              class="card-image"
+              style="background-image: url(./Assests/DAye\ shifting.jpg)"
+            ></div>
+            <h3>Date Shift for Annual Sun Festival Due to Calendar Conflict</h3>
+            <p>
+              Official notice regarding a one-time adjustment to a major holiday
+              date...
+            </p>
+            <a
+              href="#"
+              class="card-link"
+              onclick="openModal(event, 'news-modal2')"
+              >Read Article</a
+            >
+          </article>
+
+          <article class="card blog-post-card" data-modal-target="#news-modal3">
+            <div
+              class="card-image"
+              style="
+                background-image: url(./Assests/Impact\ of\ Extended\ Holiday\ Weekends\ on\ Global\ Travel.jpg);
+              "
+            ></div>
+            <h3>Impact of Extended Holiday Weekends on Global Travel</h3>
+            <p>
+              An analysis of how long holiday weekends affect international
+              tourism...
+            </p>
+            <a
+              href="#"
+              class="card-link"
+              onclick="openModal(event, 'news-modal3')"
+              >Read Article</a
+            >
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div id="news-modal1" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('news-modal1')"
+          >&times;</span
+        >
+        <h3>Government Approves New Public Holiday in Republic of Aethel</h3>
+        <p>
+          The Ministry of Culture in Republic of Aethel announced today the
+          addition of 'Unity Day' on March 15th as a permanent public holiday,
+          starting next year. This holiday commemorates the founding of the
+          modern nation and will feature nationwide parades and cultural
+          events...
+        </p>
+        <p>Date Published:Dec 5, 2024</p>
+      </div>
+    </div>
+
+    <div id="news-modal2" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('news-modal2')"
+          >&times;</span
+        >
+        <h3>Date Shift for Annual Sun Due to Calendar Conflict</h3>
+        <p>
+          Due to an unusual confluence of celestial events and the traditional
+          lunar calendar, the date for the Annual Sun Festival in the Kingdom of
+          Veridia has been officially moved from its usual third Sunday in June
+          to the second Saturday. Authorities confirm this is a one-time
+          adjustment for the current year only...
+        </p>
+        <p>Date Published: Nov 20, 2024</p>
+      </div>
+    </div>
+
+    <div id="news-modal3" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('news-modal3')"
+          >&times;</span
+        >
+        <h3>Impact of Extended Holiday Weekends on Global Travel</h3>
+        <p>
+          Extended weekends caused by public holidays that fall on a Tuesday or
+          Thursday often lead to 'bridge days' where employees take the
+          intervening day off, creating a 4-day weekend. Our analysis shows a
+          30% surge in short-haul international flights during these periods
+          across the Northern Hemisphere. Travelers are advised to book in
+          advance...
+        </p>
+        <p>Date Published: Nov 10, 2024</p>
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <p>
+        &copy; 2025 Global Holiday Tracker. All rights reserved. | Developed by
+        Web Dev Dave | Data powered by Nager.Date API
+      </p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+
+    <script src="./JavaScript/apps.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Search - Global Holiday Tracker</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo-container">
+        <a href="./Home.html">Holiday-Tracker</a>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="./1.html">Home</a></li>
+          <li><a href="./1api.html" class="active">API Search</a></li>
+          <li><a href="./1blogs.html">Blogs</a></li>
+          <li><a href="./1news.html">News</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero-section" id="api-hero">
+        <div class="hero-content">
+          <h2 class="animate-float">Explore Global Holidays Instantly</h2>
+          <p>
+            Use our tool to search for public holidays by country and year,
+            powered by the Nager.Date API.
+          </p>
+        </div>
+      </section>
+
+      <section class="api-search-section">
+        <h2 class="section-title">Holiday-Finder</h2>
+        <div class="search-controls">
+          <select id="country-select" aria-label="Select Country">
+            <option value="">-- Select Country --</option>
+          </select>
+
+          <input
+            type="number"
+            id="year-input"
+            placeholder="Enter Year (e.g., 2025)"
+            min="1900"
+            max="2100"
+            aria-label="Enter Year"
+          />
+
+          <button id="search-btn" class="btn btn-primary">
+            <i class="fas fa-search"></i> Search Holidays
+          </button>
+        </div>
+
+        <div
+          class="loading-indicator"
+          id="loading-spinner"
+          style="display: none"
+        >
+          <div class="spinner"></div>
+          <p>Fetching data...</p>
+        </div>
+
+        <div class="holiday-results-grid" id="holiday-results">
+          <p class="placeholder-text">
+            Select a country and year, then click 'Search Holidays' to see the
+            results.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <p>
+        &copy; 2025 Global Holiday Tracker. All rights reserved. | Developed by
+        Web Dev Dave | Data powered by Nager.Date API
+      </p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+
+    <script src="./JavaScript/apps.js"></script>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs - Global Holiday Tracker</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo-container">
+        <a href="./Home.html">Holiday-Tracker</a>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="./Home.html">Home</a></li>
+          <li><a href="./API.html">API Search</a></li>
+          <li><a href="./Blogs.html" class="active">Blogs</a></li>
+          <li><a href="./News.html">News</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero-section" id="blog-hero">
+        <div class="hero-content">
+          <h2>Cultural Insights & Travel Guides</h2>
+          <p>
+            Find useful information about places around the world, travel tips,
+            and holiday traditions.
+          </p>
+        </div>
+      </section>
+
+      <section class="cards-section blog-posts">
+        <h2 class="section-title">All Blog Posts</h2>
+        <div class="card-grid">
+          <article class="card blog-post-card" data-modal-target="#modal1">
+            <div
+              class="card-image"
+              style="
+                background-image: url(./Assests/The\ Magic\ of\ Christmas\ Markets\ in\ Europe.jpg);
+              "
+            ></div>
+            <h3>The Magic of Christmas Markets in Europe</h3>
+            <p>Discover the best markets in Germany, Austria, and France...</p>
+            <a href="#" class="card-link" onclick="openModal(event, 'modal1')"
+              >Read Post</a
+            >
+          </article>
+
+          <article class="card blog-post-card" data-modal-target="#modal2">
+            <div
+              class="card-image"
+              style="
+                background-image: url(./Assests/Tips\ for\ Planning\ a\ Multi-Country\ Trip.jpg);
+              "
+            ></div>
+            <h3>Tips for Planning a Multi-Country Trip</h3>
+            <p>
+              How to use our tracker to manage holidays across different time
+              zones...
+            </p>
+            <a href="#" class="card-link" onclick="openModal(event, 'modal2')"
+              >Read Post</a
+            >
+          </article>
+
+          <article class="card blog-post-card" data-modal-target="#modal3">
+            <div
+              class="card-image"
+              style="
+                background-image: url(./Assests/Understanding\ Lunar\ New\ Year.jpg);
+              "
+            ></div>
+            <h3>Understanding Lunar New Year</h3>
+            <p>
+              An in-depth look at the diverse celebrations across East and
+              Southeast Asia...
+            </p>
+            <a href="#" class="card-link" onclick="openModal(event, 'modal3')"
+              >Read Post</a
+            >
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+        <h3>The Magic of Christmas Markets in Europe</h3>
+        <p>
+          Christmas markets are a beloved tradition across Europe, originating
+          in Germany during the late Middle Ages. They typically run from late
+          November until Christmas Eve. Cities like Nuremberg, Vienna, and
+          Strasbourg are famous for their stunning decorations, unique
+          handicrafts, mulled wine (Glühwein), and festive food. Our blog guides
+          you through the must-see markets and local customs to make your
+          holiday trip unforgettable...
+        </p>
+        <p>Date Published: Nov 1, 2024</p>
+      </div>
+    </div>
+
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+        <h3>Tips for Planning a Multi-Country Trip</h3>
+        <p>
+          Planning a trip that spans multiple countries requires careful
+          attention to local public holidays. A holiday in one country could
+          mean closed banks and museums, while the same day in a neighboring
+          country is a normal workday. Our tracker is essential for this! Always
+          check the holiday schedules for both your arrival and departure
+          countries to avoid travel disruptions...
+        </p>
+        <p>Date Published: Oct 15, 2024</p>
+      </div>
+    </div>
+
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+        <h3>Understanding Lunar New Year</h3>
+        <p>
+          Lunar New Year, often incorrectly called 'Chinese New Year', is
+          celebrated across many Asian countries including Vietnam (**Tết**),
+          Korea (**Seollal**), and Malaysia. While the date is based on the
+          lunar calendar, the traditions are highly diverse, involving family
+          reunions, special foods (like dumplings or rice cakes), and the giving
+          of red envelopes. The holiday is a major period of travel and
+          celebration...
+        </p>
+        <p>Date Published: Sept 28, 2024</p>
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <p>
+        &copy; 2025 Global Holiday Tracker. All rights reserved. | Developed by
+        Web Dev Dave | Data powered by Nager.Date API
+      </p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+
+    <script src="./JavaScript/apps.js"></script>
+  </body>
+</html>
