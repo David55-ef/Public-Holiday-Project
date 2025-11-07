@@ -1,6 +1,4 @@
-/* ========================================================================= */
-/* CSS Variables for a Beautiful Holiday Vibe Color Scheme */
-/* ========================================================================= */
+/* CSS VARIABLE FOR ALL PAGES */
 :root {
   /* Colors */
   --color-primary: #007bff; /* Bright Azure Blue - Main CTA, Links */
@@ -22,9 +20,7 @@
   --spacing-xl: 80px;
 }
 
-/* ========================================================================= */
-/* BASE & UTILITY STYLES (All Pages) */
-/* ========================================================================= */
+/* STYLING FOR ALL PAGES */
 * {
   margin: 0;
   padding: 0;
@@ -39,13 +35,13 @@ body {
 }
 
 main {
-  padding-top: 70px; /* Offset for fixed header */
+  padding-top: 70px;
 }
 
 section {
   padding: var(--spacing-xl) 5%;
   text-align: center;
-  overflow: hidden; /* Important for animation containment */
+  overflow: hidden;
 }
 
 h1,
@@ -92,7 +88,7 @@ h3 {
 }
 
 .btn-primary:hover {
-  background-color: #0056b3; /* Darker blue */
+  background-color: #0056b3;
   transform: translateY(-2px);
 }
 
@@ -164,9 +160,7 @@ h3 {
   text-decoration: underline;
 }
 
-/* ========================================================================= */
 /* HEADER & FOOTER STYLES (All Pages) */
-/* ========================================================================= */
 
 .main-header {
   background-color: var(--color-text-light);
@@ -247,9 +241,7 @@ h3 {
   margin: 0 10px;
 }
 
-/* ========================================================================= */
 /* KEYFRAMES & ANIMATIONS */
-/* ========================================================================= */
 
 /* Floating Animation for Hero Content */
 @keyframes float {
@@ -268,9 +260,7 @@ h3 {
   animation: float 4s ease-in-out infinite;
 }
 
-/* ========================================================================= */
 /* INDEX.HTML SPECIFIC STYLES */
-/* ========================================================================= */
 
 /* Hero Section */
 .hero-section {
@@ -403,10 +393,7 @@ h3 {
   margin-bottom: var(--spacing-md);
 }
 
-/* ========================================================================= */
 /* API.HTML SPECIFIC STYLES */
-/* ========================================================================= */
-
 /* API Hero - Different background for visual separation */
 #api-hero {
   background-image: linear-gradient(
@@ -492,7 +479,7 @@ h3 {
 }
 
 .placeholder-text {
-  grid-column: 1 / -1; /* Span across all columns */
+  grid-column: 1 / -1;
   text-align: center;
   padding: var(--spacing-xl);
   font-style: italic;
@@ -521,9 +508,7 @@ h3 {
   }
 }
 
-/* ========================================================================= */
 /* BLOG.HTML & NEWS.HTML SPECIFIC STYLES */
-/* ========================================================================= */
 
 /* Hero Sections */
 #blog-hero {
@@ -551,9 +536,9 @@ h3 {
 
 /* Modal Styling */
 .modal {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;
-  z-index: 2000; /* Above everything */
+  z-index: 2000;
   left: 0;
   top: 0;
   width: 100%;
@@ -611,9 +596,7 @@ h3 {
   margin-bottom: var(--spacing-md);
 }
 
-/* ========================================================================= */
 /* MEDIA QUERIES (Responsiveness) */
-/* ========================================================================= */
 
 @media (max-width: 992px) {
   .section-title {
