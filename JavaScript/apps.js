@@ -1,9 +1,7 @@
-/* ========================================================================= */
-/* SHARED JAVASCRIPT (Navigation & Modals) */
-/* ========================================================================= */
+// Shared JavaScript for all Pages
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Mobile Navigation Toggle
+  // For Mobile Navigation Toggle
   const navToggle = document.querySelector(".nav-toggle");
   const mainNav = document.querySelector(".main-nav");
 
@@ -13,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Initialize scripts based on the page
+  // To Initialize scripts based on the page
   if (document.querySelector(".api-search-section")) {
     initializeApiPage();
   }
@@ -21,9 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /**
  * Global function to open a modal
- * @param {Event} event - The click event
+ * @param {Event} event - For The click event
  * @param {string} modalId - The ID of the modal to open
  */
+
 function openModal(event, modalId) {
   event.preventDefault(); // Stop link from navigating
   const modal = document.getElementById(modalId);
@@ -34,7 +33,7 @@ function openModal(event, modalId) {
 
 /**
  * Global function to close a modal
- * @param {string} modalId - The ID of the modal to close
+ * @param {string} modalId - For The ID of the modal to close
  */
 function closeModal(modalId) {
   const modal = document.getElementById(modalId);
@@ -43,23 +42,21 @@ function closeModal(modalId) {
   }
 }
 
-// Close modal when user clicks anywhere outside of it
+// To Close the modal when user clicks anywhere outside of it
 window.onclick = function (event) {
   if (event.target.classList.contains("modal")) {
     event.target.style.display = "none";
   }
 };
 
-/* ========================================================================= */
 /* API PAGE SPECIFIC JAVASCRIPT (Nager.Date API Integration) */
-/* ========================================================================= */
 
 // Nager.Date API Endpoints
 const API_BASE_URL = "https://date.nager.at/api/v3/";
 const COUNTRIES_URL = `${API_BASE_URL}AvailableCountries`;
 
 /**
- * Initializes the API search page: fetches countries and sets up the search listener.
+ * To Initializes the API search page: fetches countries and sets up the search listener.
  */
 async function initializeApiPage() {
   const countrySelect = document.getElementById("country-select");
@@ -78,7 +75,7 @@ async function initializeApiPage() {
 }
 
 /**
- * Fetches the list of available countries from the Nager.Date API and populates the dropdown.
+ * To Fetche the list of available countries from the Nager.Date API and populates the dropdown.
  * @param {HTMLSelectElement} selectElement - The <select> element to populate.
  */
 async function fetchAndPopulateCountries(selectElement) {
@@ -89,7 +86,7 @@ async function fetchAndPopulateCountries(selectElement) {
     }
     const countries = await response.json();
 
-    // Sort countries alphabetically by name
+    // Sorting countries alphabetically by name
     countries.sort((a, b) => a.name.localeCompare(b.name));
 
     countries.forEach((country) => {
@@ -109,7 +106,7 @@ async function fetchAndPopulateCountries(selectElement) {
 }
 
 /**
- * Fetches public holidays for the selected country and year.
+ * Fetching public holidays for the selected country and year.
  */
 async function fetchHolidays() {
   const countryCode = document.getElementById("country-select").value;
@@ -146,7 +143,7 @@ async function fetchHolidays() {
     console.error("Error fetching holidays:", error);
     resultsContainer.innerHTML = `<p class="placeholder-text" style="color:red;">An error occurred while fetching data. Check the console for details.</p>`;
   } finally {
-    // Hide loading spinner
+    // To Hide loading spinner
     loadingSpinner.style.display = "none";
   }
 }
