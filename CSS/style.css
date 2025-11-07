@@ -339,7 +339,7 @@ h3 {
 .about-content h2 {
   color: var(--color-primary);
   font-size: 2em;
-  border-left: 5px solid var(--color-accent);
+  /* border-left: 5px solid var(--color-accent); */
   padding-left: var(--spacing-sm);
 }
 
